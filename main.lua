@@ -5,16 +5,7 @@
 -- Variables and Init --
 ------------------------
 
-local string = {'BLOODY',Config.botUsername,'VALUE','SECURITY','SECURE','TOKEN','WHERE','SET'}
-local string2 = {'SECURITY',"START",'STOP','RESTART','ENSURE','RESTART','REFRESH','GROUP'}
 
-local Token = math.random(999, 9999).."-"..math.random(string2[1], string2[8]).."-"..math.random(999, 9999).."-"..math.random(string[1], string[8]).."-"..math.random(999, 9999)
-
-RegisterServerEvent('security:RequestToken')
-AddEventHandler('security:RequestToken', function()
-	local source = source
-    TriggerClientEvent('security:OnRequestToken', source, Token)
-end)
 
 -- From config 
 
